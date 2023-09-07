@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <title>Decodificador</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+            .background-image{
+                background-image: url(Images/rocket2.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: auto;
+                height: 100vh;
+            }
+        
+        </style>
+    <header>
+        <nav class="container">
+            <img class="logoAlura" src="Images/Logo.png" alt="Logo da Alura">
+            
+        </nav>
+    </header>
+    
+    <main>
+        <secction>
+            <textarea class="text-area" cols="41" rows="4" placeholder="Digite o seu texto"></textarea>
+
+            <div>
+                <h6 class="informacao"><alt=>Apenas letras minúsculas e sem acento.</h6>
+            </div>
+
+            <div class="botoes">
+                <button class="btn-encriptar" onclick="validaBtnEncriptar()">Criptografar</button>
+                <button class="btn-desencriptar" onclick="validaBtnDesencriptar()">Descriptografar</button>
+            </div>
+        </secction>
+
+        <secction>
+            <textarea class="mensagem" cols="20" rows="10"></textarea>
+            <button class="btn-copiar" onclick="validaBtnCpiar()">Copiar</button>
+        </secction>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
